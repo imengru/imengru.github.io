@@ -1,44 +1,115 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Profile</title>
+    <title>Mengru Chen - Academic Resume</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1, h2, h3 { color: #333; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        h1, h2 { color: #333; }
         .section { margin-bottom: 20px; }
-        .publication { margin-left: 20px; }
+        .contact { font-size: 0.9em; color: #555; }
+        .publication, .experience-item, .award { margin-left: 20px; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Dr. [Your Name]</h1>
-        <p>Ph.D. in Computer Science, South China University of Technology</p>
+        <h1>Mengru Chen</h1>
+        <p class="contact">
+            Phone: 15116891345 | Email: ichenmengru@gmail.com
+        </p>
     </header>
 
     <section class="section">
         <h2>Education</h2>
-        <p><strong>Ph.D. in Computer Science and Engineering</strong> <br>
-           South China University of Technology, 2021 – 2025</p>
-        <p><strong>Master of Computer Science and Technology</strong> <br>
-           South China University of Technology, 2020 – 2021</p>
+        <p><strong>Ph.D. in Electronic Information (Computer Technology)</strong> <br>
+           School of Computer Science and Engineering, South China University of Technology <br>
+           September 2021 – July 2025</p>
+        <p><strong>M.S. in Computer Science and Technology</strong> <br>
+           School of Computer Science and Engineering, South China University of Technology <br>
+           September 2020 – July 2021</p>
+        <p><strong>B.S. in Electronic Information Engineering</strong> <br>
+           School of Telecommunications, Hunan Institute of Technology <br>
+           September 2015 – July 2019</p>
     </section>
 
     <section class="section">
-        <h2>Research Interests</h2>
-        <p>Heterogeneous Graphs, Knowledge Distillation, Recommender Systems</p>
-    </section>
+        <h2>Research Experience</h2>
 
-    <section class="section">
-        <h2>Publications</h2>
-        <div class="publication">
-            <p><strong>Title:</strong> Heterogeneous Graph Contrastive Learning for Recommendation</p>
-            <p><strong>Authors:</strong> M. Chen, C. Huang, L. Xia, W. Wei, Y. Xu, R. Luo</p>
-            <p><strong>Conference:</strong> WSDM 2023</p>
+        <div class="experience-item">
+            <p><strong>Heterogeneous Graph Contrastive Learning for Recommendation</strong> | First Author</p>
+            <ul>
+                <li><strong>Key Idea:</strong> Introduced multi-domain semantic relationships to enhance user-item multi-faceted modeling, addressing limitations in heterogeneous data fusion.</li>
+                <li>Proposed a general heterogeneous graph contrastive learning paradigm to capture high-order semantic information.</li>
+                <li>Used self-supervised learning to model collaborative relationships and mitigate label sparsity, improving user preference feature quality.</li>
+                <li>Introduced a meta-learning neural network for personalized target-auxiliary relationship modeling.</li>
+                <li><strong>Publication:</strong> (WSDM’23) "Heterogeneous Graph Contrastive Learning for Recommendation" M. Chen, C. Huang, L. Xia, W. Wei, Y. Xu, R. Luo.</li>
+                <li><strong>Patent:</strong> A method and device for recommendation based on heterogeneous relational graph neural network (Granted).</li>
+            </ul>
         </div>
+
+        <div class="experience-item">
+            <p><strong>Heterogeneous Graph Knowledge Distillation for Recommendation</strong> | First Author</p>
+            <ul>
+                <li><strong>Key Idea:</strong> Addressed high complexity in heterogeneous graph recommendation models with knowledge distillation for an efficient, lightweight model.</li>
+                <li>Designed three distillation schemes to increase supervision signal diversity, enhancing multi-level semantic feature and graph structure reconstruction.</li>
+                <li>Applied information bottleneck theory to improve noise robustness in the distillation process.</li>
+                <li><strong>Paper:</strong> Independently drafted and submitted to WSDM'25.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <p><strong>Conditional Diffusion Model for Heterogeneous Relation Fusion in Recommendations</strong> | First Author</p>
+            <ul>
+                <li><strong>Key Idea:</strong> Developed a conditional diffusion model with cross-guided denoising to maximize feature fusion, aiming to generate valuable semantic features.</li>
+                <li>Integrated text-based conditional features via large language models for better adaptation to complex conditions.</li>
+                <li>Enhanced diversity of generated results by combining conditional and unconditional diffusion with curriculum learning.</li>
+                <li>Ablation studies showed significant improvement, achieving results comparable to top LLM-based models (RLMRec).</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Internship Experience</h2>
+
+        <div class="experience-item">
+            <p><strong>Tencent | WeChat | Public Account Recommendation Ranking Model</strong> | Major Contributor <br>
+               March 2024 – October 2024</p>
+            <ul>
+                <li><strong>Cold & Hot Item Projection:</strong> Developed a mapping between static and dynamic features for items transitioning from cold to hot, enabling moderate warming for cold items with only static features.</li>
+                <li>Improved C-side metrics: clicks (+14.1%), impressions (+5.67%), CTR (+8.17%); Enhanced B-side cold pool content ratios in 24 hours.</li>
+            </ul>
+            <ul>
+                <li><strong>CTR Estimation with Beta Distribution:</strong> Modeled CTR with Beta distribution, incorporating prior knowledge directly for exploratory adjustment.</li>
+                <li>Improved exposure click-through rate by +2.67%.</li>
+            </ul>
+            <ul>
+                <li><strong>Feature Engineering – GNN Encoded Semantic Diffusion Edge Features:</strong> Constructed auxiliary/expanded graph structures to improve information diffusion and feature learning.</li>
+                <li>Significantly increased exposure proportion (+35.4%), per capita clicks (+19.3%), impressions (+36.1%).</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Honors and Awards</h2>
+        <div class="award">
+            <ul>
+                <li>National Scholarship (2016, 2017, 2018)</li>
+                <li>National Inspirational Scholarship, University Special Scholarship (2019)</li>
+                <li>National Undergraduate Mathematical Modeling Competition (2017)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Summary</h2>
+        <ul>
+            <li>Proficient in Python and PyTorch, experienced with machine learning libraries.</li>
+            <li>Knowledgeable in heterogeneous relation modeling for recommendations, GNNs, self-supervised learning, knowledge distillation, and diffusion models.</li>
+            <li>Familiar with large language model paradigms for recommendations; developing industry-level modeling skills, with strong debugging abilities.</li>
+            <li>Persistent, enjoys research, proactively learns and self-improves, passionate about regular exercise.</li>
+        </ul>
     </section>
 
 </body>
